@@ -4,15 +4,20 @@ import ThemeToggle from './components/ThemeToggle';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import Login from './pages/Login';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <ThemeProvider>
       <div className="App">
         <Header />
-        <ThemeToggle />     
-        <Main />
+        <ThemeToggle />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
         <Footer />
       </div>
     </ThemeProvider>

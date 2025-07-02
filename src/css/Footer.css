@@ -1,6 +1,6 @@
 .footer {
-  background-color: #2c3e50;
-  color: #ffffff;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
   padding: 4rem 2rem 2rem;
   margin-top: auto;
 }
@@ -15,7 +15,7 @@
 }
 
 .footer-section h3 {
-  color: #ffffff;
+  color: var(--footer-text);
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   position: relative;
@@ -28,11 +28,11 @@
   bottom: -0.5rem;
   width: 50px;
   height: 2px;
-  background-color: #3498db;
+  background-color: var(--accent-primary);
 }
 
 .footer-section p {
-  color: #ecf0f1;
+  color: var(--footer-text-secondary);
   line-height: 1.6;
 }
 
@@ -44,13 +44,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.8rem;
-  color: #ecf0f1;
+  color: var(--footer-text-secondary);
 }
 
 .contact-icon {
   margin-right: 0.8rem;
   font-size: 1.2rem;
-  color: #3498db;
+  color: var(--accent-primary);
 }
 
 .footer-section ul {
@@ -64,13 +64,13 @@
 }
 
 .footer-section ul li a {
-  color: #ecf0f1;
+  color: var(--footer-text-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #3498db;
+  color: var(--accent-primary);
 }
 
 .social-links {
@@ -80,10 +80,10 @@
 }
 
 .social-links a {
-  color: #ecf0f1;
+  color: var(--footer-text-secondary);
   text-decoration: none;
   padding: 0.8rem 1.2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: 4px;
   transition: all 0.3s ease;
   display: flex;
@@ -96,20 +96,20 @@
 }
 
 .social-links a:hover {
-  background-color: #3498db;
-  color: #ffffff;
+  background-color: var(--accent-primary);
+  color: #fff;
   transform: translateY(-2px);
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--card-border);
 }
 
 .footer-bottom p {
   margin: 0;
-  color: #bdc3c7;
+  color: var(--footer-text-secondary);
   font-size: 0.9rem;
 }
 

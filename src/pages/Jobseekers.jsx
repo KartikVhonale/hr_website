@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../css/Main.css';
 import JobCard from '../components/ui/JobCard';
+import useScrollAnimation from '../lib/useScrollAnimation';
 
 const jobs = [
   {
@@ -24,14 +25,19 @@ const jobs = [
 ];
 
 const Jobseekers = () => {
+  const heroRef = useRef();
+  const featuredRef = useRef();
+  useScrollAnimation(heroRef);
+  useScrollAnimation(featuredRef);
+
   return (
     <div className="jobseekers-page">
-      <section className="jobseekers-hero">
+      <section className="jobseekers-hero" ref={heroRef}>
         <h1 className="jobseekers-title">Find Your Next Opportunity</h1>
         <p className="jobseekers-desc">Discover jobs tailored to your skills and interests. Apply in one click and take the next step in your career with TalentFlow.</p>
         <button className="jobseekers-cta">Browse Jobs</button>
       </section>
-      <section className="jobseekers-featured">
+      <section className="jobseekers-featured" ref={featuredRef}>
         <h2 className="featured-title">Featured Jobs</h2>
         <div className="featured-jobs-list">
           {jobs.map((job, idx) => (

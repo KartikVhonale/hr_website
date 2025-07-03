@@ -10,9 +10,9 @@ const Footer = () => {
           <h3>About Us</h3>
           <p>We are dedicated to providing the best service to our customers.</p>
           <div className="contact-info">
-            <p><FaPhone className="contact-icon" /> +1 (555) 123-4567</p>
-            <p><FaEnvelope className="contact-icon" /> info@yourcompany.com</p>
-            <p><FaMapMarkerAlt className="contact-icon" /> 123 Business Street, City, Country</p>
+            <p><FaPhone className="contact-icon" /> +91 1234567890</p>
+            <p><FaEnvelope className="contact-icon" /> info@gmail.com</p>
+            <p><FaMapMarkerAlt className="contact-icon" /> 123 Business Street, Pune, India</p>
           </div>
         </div>
         

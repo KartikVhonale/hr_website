@@ -12,16 +12,16 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <ThemeProvider>
-      <div className="App">
-        <Header />
+    <div className="App">
+      <Header />
         <ThemeToggle />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
-        <Footer />
-      </div>
+      <Footer />
+    </div>
     </ThemeProvider>
   );
 }

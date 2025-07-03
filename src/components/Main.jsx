@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../css/Main.css';
 import { FaBriefcase, FaUserTie, FaChartLine, FaClock, FaBuilding, FaCheckCircle } from 'react-icons/fa';
+import useScrollAnimation from '../lib/useScrollAnimation';
 
 const Main = () => {
+  const heroRef = useRef();
+  const featuresRef = useRef();
+  const statsRef = useRef();
+  const jobSeekersRef = useRef();
+  const employersRef = useRef();
+  const ctaRef = useRef();
+
+  useScrollAnimation(heroRef);
+  useScrollAnimation(featuresRef);
+  useScrollAnimation(statsRef);
+  useScrollAnimation(jobSeekersRef);
+  useScrollAnimation(employersRef);
+  useScrollAnimation(ctaRef);
+
   return (
     <main className="main">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" ref={heroRef}>
         <div className="hero-content">
           <h1>Connect Talent with Opportunity</h1>
           <p>Your premier destination for career growth and talent acquisition. We bridge the gap between exceptional candidates and leading employers.</p>
@@ -18,7 +33,7 @@ const Main = () => {
       </section>
 
       {/* Features Section */}
-      <section className="features">
+      <section className="features" ref={featuresRef}>
         <h2>Why Choose TalentFlow?</h2>
         <p className="section-subtitle">Experience the future of recruitment with our AI-powered matching and comprehensive career services</p>
         <div className="features-grid">
@@ -41,7 +56,7 @@ const Main = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="stats">
+      <section className="stats" ref={statsRef}>
         <div className="stats-grid">
           <div className="stat-item">
             <h3>10K+</h3>
@@ -63,7 +78,7 @@ const Main = () => {
       </section>
 
       {/* Job Seekers Section */}
-      <section className="content job-seekers">
+      <section className="content job-seekers" ref={jobSeekersRef}>
         <div className="content-container">
           <div className="content-text">
             <h2>For Job Seekers</h2>
@@ -102,7 +117,7 @@ const Main = () => {
       </section>
 
       {/* Employers Section */}
-      <section className="content employers">
+      <section className="content employers" ref={employersRef}>
         <div className="content-container reverse">
           <div className="content-text">
             <h2>For Employers</h2>
@@ -141,7 +156,7 @@ const Main = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="cta-section">
+      <section className="cta-section" ref={ctaRef}>
         <h2>Ready to Take the Next Step?</h2>
         <p>Join thousands of professionals and companies who trust TalentFlow for their career and hiring needs.</p>
         <div className="cta-buttons">

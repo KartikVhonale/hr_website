@@ -8,6 +8,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Jobseekers from './pages/Jobseekers';
 import Employers from './pages/Employers';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/jobseekers" element={<Jobseekers />} />
           <Route path="/employers" element={<Employers />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       <Footer />
     </div>

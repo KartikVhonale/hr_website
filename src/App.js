@@ -10,6 +10,7 @@ import Jobseekers from './pages/Jobseekers';
 import Employers from './pages/Employers';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Articles from './pages/Articles';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/employers" element={<Employers />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/articles" element={<Articles />} />
         </Routes>
       <Footer />
     </div>

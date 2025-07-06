@@ -3,7 +3,7 @@ import '../css/Main.css';
 import useScrollAnimation from '../lib/useScrollAnimation';
 
 const team = [
-  { name: 'Rodage', role: 'Founder & CEO' },
+  { name: 'Rodge', role: 'Founder & CEO' },
   { name: 'ABC', role: 'Head of Product' },
   { name: 'ABC', role: 'Lead Engineer' },   
 ];
